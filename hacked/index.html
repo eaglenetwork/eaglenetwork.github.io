@@ -16,15 +16,6 @@
 <script type="text/javascript" src="classes.js"></script>
 <script type="text/javascript" src="eagswebrtc.js"></script>
 <script type="text/javascript">
-if (localStorage.getItem("auth") != "true"){
-	if (prompt("Industrial Technology Password: ") == "gyatt") {
-		localStorage.setItem("auth","true")
-	} else {
-		alert("Website malfunction.")
-		while (true) {}
-	}
-}
-
 if(document.location.href.startsWith("file:")) {
 alert("You cannot 'open' this file in your browser, the code doesn't work. Upload this folder to your HTTP(s) server and access it via the internet to launch the stable-download game. This is not a bug, please read the documentation");
 }else {
