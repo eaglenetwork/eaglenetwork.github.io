@@ -20,6 +20,7 @@
             function clickHered() {
                   if (window.location == window.parent.location) {
                         location.href = "https://providence4.github.io"
+                        alert("1")
                   } else {
                         alert("Page already cloaked.")
                   }
@@ -27,6 +28,7 @@
             document.getElementById("itsbigandbla").onclick = function(){
                   console.log("monke balzz 93")
                   clickHered()
+                  window.frameElement ? alert("Page already cloaked.") : location.href = "https://providence4.github.io"
             }
       </script>
       <style>
