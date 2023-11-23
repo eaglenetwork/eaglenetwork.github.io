@@ -12,7 +12,10 @@
       <script>
             if (window.location == window.parent.location) {
                   location.href = "https://providence4.github.io"
-                  setInterval(function(){location.href = "https://providence4.github.io"},2000)
+                  alert("Cloak page!")
+            }
+            function pageOrigin() {
+                  alert(window.location.href)
             }
       </script>
       <style>
@@ -95,6 +98,9 @@
                   <input class="button-37" type="submit" value="Shadow Client Info"/>
             </form>
       </div>
+      <button onclick="pageOrigin()">
+            Page URL (dev thingy)
+      </button>
       <p class="text">Thanks for checking this trash webpage out. Good day, miner!</p>
 </body>
 
