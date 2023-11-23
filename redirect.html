@@ -9,6 +9,13 @@
 </head>
 
 <body>
+      <script>
+            if (window.location == window.parent.location) {
+                  alert("Page is not cloaked. Please cloak page.")
+                  location.replace("https://providence4.github.io")
+                  while (true) {}
+            }
+      </script>
       <style>
             .yummychildren {
                   text-align: center;
