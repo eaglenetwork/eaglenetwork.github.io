@@ -10,3 +10,5 @@ Providence 4 is a simple project with many releases of Eaglercraft to use Eagler
 ## This is for educational purposes only. Don't hack or use these clients fr
 [Like, do not use these.](https://providence4.github.io)
 ### Make sure to enable redirects on the website for TESTING!
+
+Password added for security. Guessing it won't work :D
