@@ -1,4 +1,5 @@
 §fPrecision Client is a custom eaglercraft client with QOL §ffeatures, custom texture packs, and more.§r
+§Providence4
 
 §9This was created by LAX1DUDE and forked by EtcherFX§r
 
