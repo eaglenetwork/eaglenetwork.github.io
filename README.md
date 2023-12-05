@@ -1,4 +1,4 @@
-# Providence4
+# Eaglenetwork
 Providence 4 is a simple project with many releases of Eaglercraft to use Eaglercraft to its fullest.
 * FuschiaX (1.5.2 Hacked Client with Xray)
 * Precision Client (Fullbright Legit Client)
@@ -8,7 +8,8 @@ Providence 4 is a simple project with many releases of Eaglercraft to use Eagler
 * DragonX Client (1.8 hacked client)
 * Uwu Client (1.8 Hacked Client as well)
 ## This is for educational purposes only. Don't hack or use these clients fr
-[Like, do not use these.](https://providence4.github.io)
+[Like, do not use these.](https://eaglenetwork.github.io)
 ### Make sure to enable redirects on the website for TESTING!
 
 Password added for security. Guessing it won't work :D
+Maintained by Eaglenetwork
