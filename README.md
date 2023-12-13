@@ -13,3 +13,5 @@ Eaglenetwork is a simple project with many releases of Eaglercraft to use Eagler
 
 Password added for security. Guessing it won't work :D
 Maintained by Eaglenetwork
+
+## I wonder what other things are hosted here...
