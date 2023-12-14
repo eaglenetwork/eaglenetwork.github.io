@@ -1,6 +1,6 @@
 var cacheName = 'TIWcog';
 var filesToCache = [
-  '/js/sw.js'
+  '/js/sw.js' // begin /other/stativiolet/static/js/sw.js
 ];
 
 self.addEventListener('install', function(e) {
