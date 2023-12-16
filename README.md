@@ -1,2 +1,2 @@
 # eaglenetwork
-## discord: xtect
+yeah its not accessible
