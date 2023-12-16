@@ -12,12 +12,70 @@
         <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
         <meta http-equiv="pragma" content="no-cache" />
 
+<<<<<<< HEAD
         <style>
             .staticrypt-hr {
                 margin-top: 20px;
                 margin-bottom: 20px;
                 border: 0;
                 border-top: 1px solid #eee;
+=======
+<body>
+    <script>
+        // if (localStorage.getItem("unauthenticated") == true) {
+        //     while (true) {} // so if people try to exploit the site they get banned
+        // }
+        // if (window.location == window.parent.location) {
+        //     localStorage.setItem("unauthenticated", true)
+        //     while (true) {}
+        // }
+        
+        if (window.location == window.parent.location) {
+            location.href = "https://eaglenetwork.github.io"
+            alert("Cloak page!")
+        }
+        window.frameElement ? console.log('page cloaked') : location.href = "https://eaglenetwork.github.io"
+        function alertminers() {
+            alert("i love to play with miners.")
+        }
+
+        function alertdiscord() {
+            document.getElementById("discordtext").innerHTML = "discord: xtect"
+            document.getElementById("discordtext").classList.add('specialtext')
+        }
+
+    </script>
+    <style>
+        body {
+          background-image: url('Assets/sebastian-svenson-d2w-_1LJioQ-unsplash.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;  
+          background-size: cover;
+    }
+        .title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 100px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            cursor: pointer;
+        }
+
+        .text {
+            text-shadow: 2px 2px red;
+            font-size: 30px;
+            transition: color 0.2s;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .text:hover {
+            color: green
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+>>>>>>> 33c870087a70f187aa0120c26dc594411ef621d2
             }
 
             .staticrypt-page {
@@ -717,6 +775,7 @@ function init(staticryptConfig, templateConfig) {
             const expiration = localStorage.getItem(rememberExpirationKey),
                 isExpired = expiration && new Date().getTime() > parseInt(expiration);
 
+<<<<<<< HEAD
             if (isExpired) {
                 clearLocalStorage();
                 return false;
@@ -818,4 +877,6 @@ exports.init = init;
             });
         </script>
     </body>
+=======
+>>>>>>> 33c870087a70f187aa0120c26dc594411ef621d2
 </html>
