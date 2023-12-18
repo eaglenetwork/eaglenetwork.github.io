@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>eaglenetwork</title>
+</head>
+
+<body>
+    <script>
+        if (document.referrer != "https://eaglenetwork.github.io/redirect.html") {
+            alert("nice try")
+            while (true) {}
+        }
+        // if (localStorage.getItem("unauthenticated") == true) {
+        //     while (true) {} // so if people try to exploit the site they get banned
+        // }
+        // if (window.location == window.parent.location) {
+        //     localStorage.setItem("unauthenticated", true)
+        //     while (true) {}
+        // }
+        
+        if (window.location == window.parent.location) {
+            location.href = "https://eaglenetwork.github.io"
+            alert("Cloak page!")
+        }
+        window.frameElement ? console.log('page cloaked') : location.href = "https://eaglenetwork.github.io"
+        function alertminers() {
+            alert("i love to play with miners.")
+        }
+
+        function alertdiscord() {
+            document.getElementById("discordtext").innerHTML = "discord: xtect"
+            document.getElementById("discordtext").classList.add('specialtext')
+        }
+
+    </script>
+    <style>
+        body {
+            background-image: url('Assets/sebastian-svenson-d2w-_1LJioQ-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 100px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            cursor: pointer;
+        }
+
+        .text {
+            text-shadow: 2px 2px red;
+            font-size: 30px;
+            transition: color 0.2s;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .text:hover {
+            color: green
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+        .specialtext {
+            text-shadow: 2px 2px red;
+            font-size: 30px;
+            transition: color 0.2s;
+            text-align: center;
+            cursor: pointer;
+            opacity: 0;
+            animation: fadeIn 3s ease-in-out forwards;
+        }
+        .button {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 25px 48px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 32px;
+            transition: 0.5s;
+            margin-left: 20px;
+            font-size: 20px;
+            border-radius: 25px;
+            border: 2px solid #d00c16;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            color: red;
+            transform: scale(1.2);
+        }
+
+        .centerbutton {
+            background-color: #0e5772a4;
+            border: none;
+            color: white;
+            padding: 25px 48px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 32px;
+            transition: 0.5s;
+            margin-left: 20px;
+            font-size: 20px;
+            border-radius: 25px;
+            border: 2px solid #87030a;
+            text-align: center;
+            align-content: center;
+            cursor: pointer;
+        }
+
+        .centerbutton:hover {
+            color: rgb(9, 255, 0);
+            transform: scale(1.2);
+        }
+    </style>
+    <h1 class="title">
+        eaglenetwork
+    </h1>
+    <h5 id="reactiontext" class="text" onclick="alertdiscord()">
+        eagle network is maintained by tectonic
+    </h5>
+    <h4 id="discordtext">
+
+    </h4>
+    <div style="align-content: center; text-align: center;">
+        <a href="/Other/simpleplatformer.html">
+            <button class="button">
+                platformer game
+            </button>
+        </a>
+        <a href="/Other/cloaker.html">
+            <button class="button">
+                page cloaker
+            </button>
+        </a>
+        <!-- <a href="/Clients/UwU.html">
+            <button class="button">
+                uwu client
+            </button>
+        </a>
+        <a href="/Clients/DragonX.html">
+            <button class="button">
+                dragonx client
+            </button>
+        </a>
+    </div> -->
+    <div style="text-align: center; margin-top: 30px">
+        <a href="redirect.html">
+            <button class="centerbutton">
+                Go Back
+            </button>
+        </a>
+        <a>
+            <button class="centerbutton" onclick="alert(document.referrer)">
+                dev button
+            </button>
+        </a>
+    </div>
+</body>
+
+</html>
