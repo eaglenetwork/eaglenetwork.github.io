@@ -21,12 +21,13 @@
         //     localStorage.setItem("unauthenticated", true)
         //     while (true) {}
         // }
-        
+
         if (window.location == window.parent.location) {
             location.href = "https://eaglenetwork.github.io"
             alert("Cloak page!")
         }
         window.frameElement ? console.log('page cloaked') : location.href = "https://eaglenetwork.github.io"
+
         function alertminers() {
             alert("i love to play with miners.")
         }
@@ -36,6 +37,27 @@
             document.getElementById("discordtext").classList.add('specialtext')
         }
 
+        function cloaker() {
+            input = prompt("Website to cloak:")
+            if (!input.startsWith("http://") || !input.startsWith("https://")) {
+                input = "http://" + input
+            }
+
+            function create() {
+                var url = input
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+            }
+            create()
+        }
     </script>
     <style>
         body {
@@ -44,6 +66,7 @@
             background-attachment: fixed;
             background-size: cover;
         }
+
         .title {
             text-align: center;
             font-weight: bold;
@@ -73,6 +96,7 @@
                 opacity: 1;
             }
         }
+
         .specialtext {
             text-shadow: 2px 2px red;
             font-size: 30px;
@@ -82,6 +106,7 @@
             opacity: 0;
             animation: fadeIn 3s ease-in-out forwards;
         }
+
         .button {
             background-color: #04AA6D;
             border: none;
@@ -143,34 +168,28 @@
                 platformer game
             </button>
         </a>
-        <a href="/Other/cloaker.html">
+        <!-- <a href="/Other/cloaker.html">
             <button class="button">
                 page cloaker
             </button>
-        </a>
-        <!-- <a href="/Clients/UwU.html">
-            <button class="button">
-                uwu client
-            </button>
-        </a>
-        <a href="/Clients/DragonX.html">
-            <button class="button">
-                dragonx client
-            </button>
-        </a>
-    </div> -->
-    <div style="text-align: center; margin-top: 30px">
-        <a href="redirect.html">
-            <button class="centerbutton">
-                Go Back
-            </button>
-        </a>
+        </a> -->
         <a>
-            <button class="centerbutton" onclick="alert(document.referrer)">
-                dev button
+            <button class="button" onclick="cloaker()">
+                page cloaker
             </button>
         </a>
-    </div>
+        <div style="text-align: center; margin-top: 30px">
+            <a href="redirect.html">
+                <button class="centerbutton">
+                    Go Back
+                </button>
+            </a>
+            <a>
+                <button class="centerbutton" onclick="alert(document.referrer)">
+                    dev button
+                </button>
+            </a>
+        </div>
 </body>
 
 </html>
