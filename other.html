@@ -39,10 +39,6 @@
 
         function cloaker() {
             input = prompt("Website to cloak:")
-            if (!input.startsWith("http://") || !input.startsWith("https://")) {
-                input = "http://" + input
-            }
-
             function create() {
                 var url = input
                 var win = window.open();
