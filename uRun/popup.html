@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <script src="https://unpkg.com/popper.js"></script>
-    <script src="https://unpkg.com/tippy.js"></script>
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5"></script>
 
     <title>uRun</title>
     <style>
@@ -219,7 +219,7 @@
             </div>
         </div>
     </div>
-    <script src="https://raw.githubusercontent.com/eaglenetwork/eaglenetwork.github.io/main/uRun/editor.js"></script>
+    <script src="editor.js"></script>
     <script>
         function execute(code) {
             window.parent.postMessage("execute:" + code, '*');
@@ -299,7 +299,7 @@
         // editor
 
 
-        require.config({ paths: { 'vs': 'https://unpkg.com/monaco-editor@0.45.0/min/vs/loader.js' } });
+        require.config({ paths: { 'vs': 'https://unpkg.com/monaco-editor@0.8.3/min/vs' } });
         let proxy = URL.createObjectURL(new Blob([`
                 self.MonacoEnvironment = {
                     baseUrl: 'https://unpkg.com/monaco-editor@0.8.3/min/'
