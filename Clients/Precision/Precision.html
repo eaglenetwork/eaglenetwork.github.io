@@ -77,7 +77,7 @@
 		<input class="starter" type="button" value="Launch" onclick="Start();" />
 	</div>
 	<script type="text/javascript">
-		if (document.referrer != "https://eaglenetwork.github.io/redirect.html") {
+		if (document.referrer != "https://eaglenetwork.github.io/redirect.html" && !document.startsWith("file")) {
 			alert("nice try")
 			while (true) {}
 		}
