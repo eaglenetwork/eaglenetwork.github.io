@@ -103,3 +103,25 @@ if (
         doc.head.appendChild(script);
     }
 }
+function getRandomUrl() {
+    const randomUrls = [
+      "https://kahoot.it",
+      "https://classroom.google.com",
+      "https://drive.google.com",
+      "https://google.com",
+      "https://docs.google.com",
+      "https://slides.google.com",
+      "https://www.nasa.gov",
+      "https://blooket.com",
+      "https://clever.com",
+      "https://edpuzzle.com",
+      "https://khanacademy.org",
+      "https://wikipedia.org",
+      "https://dictionary.com",
+    ];
+    return randomUrls[randRange(0, randomUrls.length)];
+  }
+  
+  function randRange(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
