@@ -23,9 +23,6 @@ if (
         ) {
             const popup = open("about:blank", "_blank");
             if (!popup || popup.closed) {
-                alert(
-                    'Please allow popups for this site. Doing so will allow us to open the site in a about:blank tab and preventing this site from showing up in your history. \n\nThe site will now redirect to Google, or you can press the "Allow Popups" currently in the top right of your screen.'
-                );
             } else {
                 const doc = popup.document;
                 const iframe = doc.createElement("iframe");
