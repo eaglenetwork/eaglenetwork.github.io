@@ -4,13 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="Assets/cloaker.js"></script> <!-- Alright, maybe it's from Interstellar and i just skidded it for the Google Drive about:blank page title, maybe not (I definitely did)-->
     <title>Eaglenetwork</title>
   </head>
   <body>
-    <h1 style="text-align: center;">If you can see this, your Browsing History has been compromised. You should not be able to see this, at all.</h1>
     <script>
-      location.replace("https://eaglenetwork.github.io/")
-      setTimeout(function(){location.replace("https://eaglenetwork.github.io")},1500)
-    </script>
+      // function create() {
+      //     var url = window.origin + "/redirect.html"
+      //     var win = window.open();
+      //     win.document.body.style.margin = '0';
+      //     win.document.body.style.height = '100vh';
+      //     var iframe = win.document.createElement('iframe');
+      //     iframe.style.border = 'none';
+      //     iframe.style.width = '100%';
+      //     iframe.style.height = '100%';
+      //     iframe.style.margin = '0';
+      //     iframe.src = url;
+      //     win.document.body.appendChild(iframe);
+      // }
+      // create()
+      location.replace("https://google.com")
+      setTimeout(function(){
+        setInterval(function(){
+          location.replace("https://google.com")
+        },1500)
+      },2000)
+      </script>
+      <p>
+        If the page is not loading enable popups/redirects, if you can see this message, your Browsing History has been compromised.
+      </p>
   </body>
 </html>
