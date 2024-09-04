@@ -28,11 +28,14 @@ if (
                 const iframe = doc.createElement("iframe");
                 const style = iframe.style;
                 const link = doc.createElement("link");
-
-                const name = localStorage.getItem("name") || "My Drive - Google Drive";
+                const sitelinks = ["https://www.ixl.com/favicon.ico", "https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png", "https://www.bigideasmath.com/favicon.ico", "https://portal.svusd.org/favicon.ico"]
+                const sitenames = ["IXL | Personalized skill recommendations", "My Drive - Google Drive", "Big Ideas Math", "SaddlePort"]
+                const redirectionye = ["https://www.ixl.com/signin/saddlebackvusd?authuser=0", "https://drive.google.com/drive/home", "https://www.bigideasmath.com/BIM/student/assignments", "https://portal.svusd.org/secure/SecureCloudAccessProfile/FinishLogin.jsp"]
+                const option = Math.floor(Math.random() * sitelinks.length)
+                const name = localStorage.getItem("name") || sitenames[option];
                 const icon =
                     localStorage.getItem("icon") ||
-                    "https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png";
+                    sitelinks[option];
 
                 doc.title = name;
                 link.rel = "icon";
@@ -49,7 +52,7 @@ if (
 
                 const pLink =
                     localStorage.getItem(encodeURI("pLink")) || getRandomUrl();
-                location.replace(pLink);
+                location.replace(redirectionye[option]);
 
                 const script = doc.createElement("script");
                 script.textContent = `
