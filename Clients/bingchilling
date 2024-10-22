@@ -1,0 +1,4 @@
+if (document.referrer != "https://eaglenetwork.github.io/redirect.html" && !window.location.href.startsWith("file")) {
+	alert("nice try")
+	while (true) {}
+}
